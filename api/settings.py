@@ -37,9 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'sender.apps.SenderConfig',
+    
     'rest_framework',
     'rest_framework.authtoken',
-    'sender.apps.SenderConfig',
+    'djoser',
 ]
 
 MIDDLEWARE = [
