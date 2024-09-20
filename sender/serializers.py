@@ -3,19 +3,20 @@ from .models import Client, Send, Message
 
 
 class ClientSerializer(serializers.ModelSerializer):
-    code = serializers.CharField(read_only = True)
+    # code = serializers.CharField(read_only = True)
+    code = serializers.SerializerMethodField()
     class Meta:
         model= Client
         fields = '__all__'
 
-    # code = serializers.SerializerMethodField()
-    # def create(self, validated_data):
-    #     validated_data['code'] = validated_data['phone_number'][1:4]
-    #     return super().create(validated_data)
-    # def update(self, instance, validated_data):
-        # return super().update(instance, validated_data)
-    # def get_code(self, obj):
-    #     return obj.phone_number[1:4]
+    def get_code(self, obj):
+        return obj.phone_number[1:4]
+    def create(self, validated_data):
+        validated_data['code'] = validated_data['phone_number'][1:4]
+        return super().create(validated_data)
+    def update(self, instance, validated_data):
+        validated_data['code'] = validated_data['phone_number'][1:4]
+        return super().update(instance, validated_data)
 
 class SendSerializer(serializers.ModelSerializer):
     class Meta:
