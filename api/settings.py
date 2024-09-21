@@ -43,6 +43,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'djoser',
+    'django_celery_results',
+    'django_celery_beat',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -144,4 +147,26 @@ REST_FRAMEWORK = {
 
    ],
    'DATETIME_FORMAT': "%Y/%m/%d %H:%M:%S",
+}
+
+# Celery settings
+CELERY_TIMEZONE = 'Europe/Moscow'
+
+CELERY_BROKER_URL = 'redis://127.0.0.1:16379/0'
+
+CELERY_RESULT_BACKEND = 'django-db'
+
+# CELERY_RESULT_BACKEND_DB = 'postgresql://test_api:1234@localhost:5432/test_db'
+
+CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
+
+CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True
+
+CELERY_CACHE_BACKEND = 'default'
+
+CACHES = {
+    "default": {
+        "BACKEND": "django.core.cache.backends.redis.RedisCache",
+        "LOCATION": "redis://127.0.0.1:16379/1",
+    }
 }
