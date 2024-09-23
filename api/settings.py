@@ -10,7 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +29,7 @@ SECRET_KEY = 'django-insecure-4n3dwal&u==f!kjom5+%yu4gkf_d4tt8-y)4$xvs*re^-5vlq8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "0.0.0.0"]
 
 
 # Application definition
@@ -78,20 +82,30 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'api.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "test_db",
-        "USER": "test_api",
-        "PASSWORD": "1234",
-        "HOST": "127.0.0.1",
-        "PORT": "5432",
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": os.getenv("POSTGRES_DB"),
+        "USER": os.getenv("POSTGRES_USER"),
+        "PASSWORD": os.getenv("POSTGRES_PASSWORD"),
+        "HOST": os.getenv("DB_HOST"),
+        # "HOST": "127.0.0.1",
+        "PORT": "15432",
     }
 }
+
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": "test_db",
+#         "USER": "test_api",
+#         "PASSWORD": "1234",
+#         "HOST": "127.0.0.1",
+#         "PORT": "5432",
+#     }
+# }
 
 
 # Password validation
@@ -146,11 +160,25 @@ REST_FRAMEWORK = {
        'rest_framework.authentication.SessionAuthentication',
 
    ],
-   'DATETIME_FORMAT': "%Y/%m/%d %H:%M:%S",
+   'DATETIME_FORMAT': "%Y-%m-%d %H:%M:%S",
 }
 
 # Celery settings
 CELERY_TIMEZONE = 'Europe/Moscow'
+
+CELERY_ENABLE_UTC=True
+
+# CELERY_WORKER_HIJACK_ROOT_LOGGER = True
+
+# CELERY_WORKER_LOGFORMAT = "%(name)s %(asctime)s %(levelname)s %(message)s"
+
+# CELERRY_WORKER_REDIRECT_STDOUTS_LEVEL = "INFO"
+
+# CELERY_WORKER_LOGFILE = "api.log"
+
+CELERY_TASK_SERIALIZER = "json"
+
+CELERY_RESULT_SERIALIZER = "json"
 
 CELERY_BROKER_URL = 'redis://127.0.0.1:16379/0'
 
