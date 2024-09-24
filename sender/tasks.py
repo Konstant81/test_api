@@ -13,7 +13,7 @@ import sender.models
 
 my_logger = get_task_logger(__name__)
 my_logger.setLevel(logging.INFO)
-my_handler = logging.FileHandler("my_api.log", encoding = 'utf-8')
+my_handler = logging.FileHandler("logs/my_api.log", encoding = 'utf-8')
 my_formatter = logging.Formatter("%(asctime)s %(levelname)s %(message)s")
 my_handler.setFormatter(my_formatter)
 my_logger.addHandler(my_handler)
@@ -37,7 +37,7 @@ def send_message(send_id):
     for client in clients:
         if now() < send.stop_date:
             sender.models.Message.objects.create(send_id=send, client_id=client)
-            # logging.info(f"В рамках рассылки {send.id} клиенту {client.id} отправлено сообщение {send.text}")
+            # logging.info('В рамках рассылки %d клиенту %d отправлено сообщение "%s"', send.id, client.id, send.text)
             my_logger.info('В рамках рассылки %d клиенту %d отправлено сообщение "%s"', send.id, client.id, send.text)
 
 # @app.task

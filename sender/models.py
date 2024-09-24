@@ -20,11 +20,11 @@ class Client(models.Model):
         verbose_name_plural = "Клиенты"
 
 class Send(models.Model):
-    start_date = models.DateTimeField()                                                                        # Время и дата запуска рассылки
-    stop_date = models.DateTimeField()                                                                         # Время и дата окончания рассылки
-    text = models.CharField(max_length=100)                                                                    # Текст сообщения
-    code = models.CharField(validators=[MinLengthValidator(limit_value=3), MaxLengthValidator(limit_value=3)]) # Код мобильного оператора
-    tag = models.CharField(max_length=100, default= None)                                                      # Метка
+    start_date = models.DateTimeField()                                                                                     # Время и дата запуска рассылки
+    stop_date = models.DateTimeField()                                                                                      # Время и дата окончания рассылки
+    text = models.CharField(max_length=100)                                                                                 # Текст сообщения
+    code = models.CharField(validators=[MinLengthValidator(limit_value=3), MaxLengthValidator(limit_value=3)], blank=True)  # Код мобильного оператора
+    tag = models.CharField(max_length=100,  blank=True)                                                                     # Метка
 
     class Meta:
         db_table = "send" # Имя таблицы в БД
