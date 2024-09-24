@@ -16,3 +16,7 @@
 - Redis
 - Docker
 - PostgreSQL
+
+Коллекция Postman для тестирования:
+
+https://web.postman.co/workspace/a552f280-f2a4-4dac-8491-2e045873347a/documentation/38299994-988a61d6-bcb5-4c39-80a3-736557a49d2f
