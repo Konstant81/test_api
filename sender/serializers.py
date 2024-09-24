@@ -3,7 +3,6 @@ from .models import Client, Send, Message
 
 
 class ClientSerializer(serializers.ModelSerializer):
-    # code = serializers.CharField(read_only = True)
     code = serializers.SerializerMethodField()
     class Meta:
         model= Client

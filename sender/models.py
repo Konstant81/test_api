@@ -1,14 +1,8 @@
 from django.db import models
 from django.core.validators import RegexValidator, MinLengthValidator, MaxLengthValidator
-# from django.forms import ValidationError
 
 
 class Client(models.Model):
-    # def code_validation(self):
-    #     print(self)
-    #     if len(self) > 3 or len(self) < 1 or not self.isdigit():
-    #         raise ValidationError('Код оператора должен иметь числовое значение и находиться в диапазоне 001...999')
-    
     phone_number = models.CharField(
         validators=[RegexValidator(regex=r'^7\d{10}$',message='Введите телефон в формате 7ХХХХХХХХХХ')])    # Номер телефона
     code = models.CharField(blank=True)                                                                     # Код мобильного оператора
@@ -27,15 +21,9 @@ class Send(models.Model):
     tag = models.CharField(max_length=100,  blank=True)                                                                     # Метка
 
     class Meta:
-        db_table = "send" # Имя таблицы в БД
+        db_table = "send"                   # Имя таблицы в БД
         verbose_name = "Рассылка"
         verbose_name_plural = "Рассылки"
-
-    # def save(self, force_insert=False, force_update=False, using=None, update_fields=None) -> None:
-    #     print(self.id)
-    #     set_schedule.delay()
-    #     return 
-        # return super().save(force_insert, force_update, using, update_fields)
         
 class Message(models.Model):
     send_date = models.DateTimeField(auto_now_add=True)                                        # Время отправки сообщения

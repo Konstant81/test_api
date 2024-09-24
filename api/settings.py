@@ -97,17 +97,6 @@ DATABASES = {
     }
 }
 
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.postgresql",
-#         "NAME": "test_db",
-#         "USER": "test_api",
-#         "PASSWORD": "1234",
-#         "HOST": "127.0.0.1",
-#         "PORT": "15432",
-#     }
-# }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -169,14 +158,6 @@ CELERY_TIMEZONE = 'Europe/Moscow'
 
 CELERY_ENABLE_UTC=True
 
-# CELERY_WORKER_HIJACK_ROOT_LOGGER = True
-
-# CELERY_WORKER_LOGFORMAT = "%(name)s %(asctime)s %(levelname)s %(message)s"
-
-# CELERRY_WORKER_REDIRECT_STDOUTS_LEVEL = "INFO"
-
-# CELERY_WORKER_LOGFILE = "api.log"
-
 CELERY_TASK_SERIALIZER = "json"
 
 CELERY_RESULT_SERIALIZER = "json"
@@ -184,8 +165,6 @@ CELERY_RESULT_SERIALIZER = "json"
 CELERY_BROKER_URL = 'redis://redis:6379/0'
 
 CELERY_RESULT_BACKEND = 'django-db'
-
-# CELERY_RESULT_BACKEND_DB = 'postgresql://test_api:1234@localhost:5432/test_db'
 
 CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
 
@@ -199,5 +178,3 @@ CACHES = {
         "LOCATION": "redis://redis:6379/1",
     }
 }
-
-
