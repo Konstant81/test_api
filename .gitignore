@@ -2,5 +2,4 @@
 __pycache__
 .pylintrc
 commands.txt
-db.json
 .dockerignore

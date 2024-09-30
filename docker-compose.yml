@@ -3,9 +3,11 @@ version: '3.9'
 services:
 
   web:
-    build: .
-    image: test_api
-    command: python manage.py runserver 0.0.0.0:8000
+    # build: .
+    image: konstant81/test_api
+    command: sh -c "python manage.py migrate &&
+             python manage.py loaddata db.json &&
+             python manage.py runserver 0.0.0.0:8000"
     restart: always
     ports:
       - 8000:8000
@@ -14,9 +16,19 @@ services:
     depends_on:
       - db
 
+  db:
+    container_name: pgdb
+    image: postgres:16-alpine
+    env_file:
+      - ./.env
+    restart: always
+    ports:
+      - 5432:5432
+
   celery:
-    image: test_api
-    command: celery -A api worker -l info  
+    image: konstant81/test_api
+    command: celery -A api worker -l info
+    restart: always
     volumes:
       - ./logs:/app/logs
     environment:
@@ -25,23 +37,13 @@ services:
       - web
       - redis
 
-  db:
-    container_name: pgdb
-    image: postgres:16-alpine
-    env_file:
-      - ./.env
-    restart: always
-    volumes:
-      - ./pg_data:/var/lib/postgresql/data
-    ports:
-      - 5432:5432
-
   redis:
     image: redis:7.4.0-alpine
 
   celery-beat:
-    image: test_api
+    image: konstant81/test_api
     command: celery -A api beat -l INFO
+    restart: always
     environment:
       - ./.env
     depends_on:
@@ -56,6 +58,3 @@ services:
       - 8080:8080
     depends_on:
       - db
-
-volumes:
-  pg_data:

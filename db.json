@@ -1,0 +1,902 @@
+[
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add Клиент",
+    "content_type": 7,
+    "codename": "add_client"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change Клиент",
+    "content_type": 7,
+    "codename": "change_client"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete Клиент",
+    "content_type": 7,
+    "codename": "delete_client"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view Клиент",
+    "content_type": 7,
+    "codename": "view_client"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add Рассылка",
+    "content_type": 8,
+    "codename": "add_send"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change Рассылка",
+    "content_type": 8,
+    "codename": "change_send"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete Рассылка",
+    "content_type": 8,
+    "codename": "delete_send"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view Рассылка",
+    "content_type": 8,
+    "codename": "view_send"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add Сообщение",
+    "content_type": 9,
+    "codename": "add_message"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change Сообщение",
+    "content_type": 9,
+    "codename": "change_message"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete Сообщение",
+    "content_type": 9,
+    "codename": "delete_message"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view Сообщение",
+    "content_type": 9,
+    "codename": "view_message"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add Token",
+    "content_type": 10,
+    "codename": "add_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change Token",
+    "content_type": 10,
+    "codename": "change_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete Token",
+    "content_type": 10,
+    "codename": "delete_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view Token",
+    "content_type": 10,
+    "codename": "view_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add Token",
+    "content_type": 11,
+    "codename": "add_tokenproxy"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change Token",
+    "content_type": 11,
+    "codename": "change_tokenproxy"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete Token",
+    "content_type": 11,
+    "codename": "delete_tokenproxy"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view Token",
+    "content_type": 11,
+    "codename": "view_tokenproxy"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add task result",
+    "content_type": 12,
+    "codename": "add_taskresult"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change task result",
+    "content_type": 12,
+    "codename": "change_taskresult"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete task result",
+    "content_type": 12,
+    "codename": "delete_taskresult"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view task result",
+    "content_type": 12,
+    "codename": "view_taskresult"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add chord counter",
+    "content_type": 13,
+    "codename": "add_chordcounter"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change chord counter",
+    "content_type": 13,
+    "codename": "change_chordcounter"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete chord counter",
+    "content_type": 13,
+    "codename": "delete_chordcounter"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view chord counter",
+    "content_type": 13,
+    "codename": "view_chordcounter"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add group result",
+    "content_type": 14,
+    "codename": "add_groupresult"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change group result",
+    "content_type": 14,
+    "codename": "change_groupresult"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete group result",
+    "content_type": 14,
+    "codename": "delete_groupresult"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view group result",
+    "content_type": 14,
+    "codename": "view_groupresult"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add crontab",
+    "content_type": 15,
+    "codename": "add_crontabschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change crontab",
+    "content_type": 15,
+    "codename": "change_crontabschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete crontab",
+    "content_type": 15,
+    "codename": "delete_crontabschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view crontab",
+    "content_type": 15,
+    "codename": "view_crontabschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add interval",
+    "content_type": 16,
+    "codename": "add_intervalschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change interval",
+    "content_type": 16,
+    "codename": "change_intervalschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete interval",
+    "content_type": 16,
+    "codename": "delete_intervalschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view interval",
+    "content_type": 16,
+    "codename": "view_intervalschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add periodic task",
+    "content_type": 17,
+    "codename": "add_periodictask"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change periodic task",
+    "content_type": 17,
+    "codename": "change_periodictask"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete periodic task",
+    "content_type": 17,
+    "codename": "delete_periodictask"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can view periodic task",
+    "content_type": 17,
+    "codename": "view_periodictask"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 69,
+  "fields": {
+    "name": "Can add periodic task track",
+    "content_type": 18,
+    "codename": "add_periodictasks"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 70,
+  "fields": {
+    "name": "Can change periodic task track",
+    "content_type": 18,
+    "codename": "change_periodictasks"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 71,
+  "fields": {
+    "name": "Can delete periodic task track",
+    "content_type": 18,
+    "codename": "delete_periodictasks"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 72,
+  "fields": {
+    "name": "Can view periodic task track",
+    "content_type": 18,
+    "codename": "view_periodictasks"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 73,
+  "fields": {
+    "name": "Can add solar event",
+    "content_type": 19,
+    "codename": "add_solarschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 74,
+  "fields": {
+    "name": "Can change solar event",
+    "content_type": 19,
+    "codename": "change_solarschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 75,
+  "fields": {
+    "name": "Can delete solar event",
+    "content_type": 19,
+    "codename": "delete_solarschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 76,
+  "fields": {
+    "name": "Can view solar event",
+    "content_type": 19,
+    "codename": "view_solarschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 77,
+  "fields": {
+    "name": "Can add clocked",
+    "content_type": 20,
+    "codename": "add_clockedschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 78,
+  "fields": {
+    "name": "Can change clocked",
+    "content_type": 20,
+    "codename": "change_clockedschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 79,
+  "fields": {
+    "name": "Can delete clocked",
+    "content_type": 20,
+    "codename": "delete_clockedschedule"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 80,
+  "fields": {
+    "name": "Can view clocked",
+    "content_type": 20,
+    "codename": "view_clockedschedule"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$MSSparITriTaH2rMu5WXGN$mEKupBd3xOGlvAbPImMbXm3kAGlUJvumPEi5ADZ3ziI=",
+    "last_login": "2024-09-30T08:39:57.452Z",
+    "is_superuser": true,
+    "username": "root",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-09-30T08:39:42.968Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$hEq3U2iNhz73hCJc6jffm4$yySl4CUVt3mx9KjXs8BHsLcPB/s5Igz6roRXxuIAKdY=",
+    "last_login": "2024-09-30T08:41:37.235Z",
+    "is_superuser": false,
+    "username": "test_user",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-09-30T08:41:10.345Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "kq7e8t5vp4lcra10zjq8ila2v2d5xdp5",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hCmFCgu3XsGwgyDVA0kpV0Z765NutDtf-_9lwhxW0vYOi9hTuIsQJx-N4z04LqDdI_11iS1ui4zyl2RB-3y2hI_L4f7d1BiL986eo3OElg0diIPyUF0jjLAyKxSRmatJqf8ODAjG9B6QK8VELHK1oj3B-eGN_o:1svBwj:p3CxEZNj-JN1cvgAyA5Sy5Tfn4J8rMwvKLHGdrhnf34",
+    "expire_date": "2024-10-14T08:39:57.457Z"
+  }
+},
+{
+  "model": "sender.client",
+  "pk": 1,
+  "fields": {
+    "phone_number": "79159257751",
+    "code": "915",
+    "tag": "tip"
+  }
+},
+{
+  "model": "sender.client",
+  "pk": 2,
+  "fields": {
+    "phone_number": "79209568512",
+    "code": "920",
+    "tag": "vip"
+  }
+},
+{
+  "model": "sender.client",
+  "pk": 3,
+  "fields": {
+    "phone_number": "79100153317",
+    "code": "910",
+    "tag": "any"
+  }
+},
+{
+  "model": "sender.client",
+  "pk": 4,
+  "fields": {
+    "phone_number": "79111231716",
+    "code": "911",
+    "tag": "any"
+  }
+},
+{
+  "model": "sender.client",
+  "pk": 5,
+  "fields": {
+    "phone_number": "79206741904",
+    "code": "920",
+    "tag": "all"
+  }
+},
+{
+  "model": "sender.client",
+  "pk": 6,
+  "fields": {
+    "phone_number": "79185147716",
+    "code": "918",
+    "tag": "vip"
+  }
+},
+{
+  "model": "sender.client",
+  "pk": 7,
+  "fields": {
+    "phone_number": "79209446789",
+    "code": "920",
+    "tag": "set"
+  }
+},
+{
+  "model": "sender.client",
+  "pk": 8,
+  "fields": {
+    "phone_number": "71235747564",
+    "code": "123",
+    "tag": "set"
+  }
+},
+{
+  "model": "sender.client",
+  "pk": 9,
+  "fields": {
+    "phone_number": "79103737777",
+    "code": "910",
+    "tag": "put"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "b7abd44eb8f0933372d21630aaafdeddb9e0419f",
+  "fields": {
+    "user": 2,
+    "created": "2024-09-30T08:41:37.230Z"
+  }
+},
+{
+  "model": "django_celery_beat.crontabschedule",
+  "pk": 1,
+  "fields": {
+    "minute": "0",
+    "hour": "4",
+    "day_of_month": "*",
+    "month_of_year": "*",
+    "day_of_week": "*",
+    "timezone": "Europe/Moscow"
+  }
+},
+{
+  "model": "django_celery_beat.periodictasks",
+  "pk": 1,
+  "fields": {
+    "last_update": "2024-09-30T08:31:57.870Z"
+  }
+},
+{
+  "model": "django_celery_beat.periodictask",
+  "pk": 1,
+  "fields": {
+    "name": "celery.backend_cleanup",
+    "task": "celery.backend_cleanup",
+    "interval": null,
+    "crontab": 1,
+    "solar": null,
+    "clocked": null,
+    "args": "[]",
+    "kwargs": "{}",
+    "queue": null,
+    "exchange": null,
+    "routing_key": null,
+    "headers": "{}",
+    "priority": null,
+    "expires": null,
+    "expire_seconds": 43200,
+    "one_off": false,
+    "start_time": null,
+    "enabled": true,
+    "last_run_at": null,
+    "total_run_count": 0,
+    "date_changed": "2024-09-30T08:31:57.868Z",
+    "description": ""
+  }
+}
+]
