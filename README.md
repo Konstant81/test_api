@@ -17,6 +17,4 @@
 - Docker
 - PostgreSQL
 
-Коллекция Postman для тестирования:
-
-https://konstantteam.postman.co/workspace/KonstantTeam~7addeb6b-acee-447d-84ee-68d6ac50c77e/collection/38299994-988a61d6-bcb5-4c39-80a3-736557a49d2f?action=share&creator=38299994
+Коллекция Postman для тестирования находится в репозитории.
